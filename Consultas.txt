@@ -1,0 +1,26 @@
+
+sospechoso(X)
+Respuesta:
+alice
+Robert
+clara
+james
+
+tiene_motivo(X)
+Respuesta:
+alice
+Robert
+clara
+james
+
+motivo_oportunidad(X)
+Respuesta:
+Clara
+
+arma_correcta(X)
+Respuesta: Clara
+
+culpable(X)
+Respuesta: Clara
+
+
