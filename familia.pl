@@ -37,3 +37,4 @@ amigo(carlos, ricardo).
 amigo(daniel, mateo).
 
 %7. primo(Persona1, Persona2). (José)
+primo(lucia, daniel).
