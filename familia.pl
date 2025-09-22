@@ -1,9 +1,56 @@
 %-----------Parte 1:  Verbos para construir la base de conocimiento-----------
 %1. vive_en(Persona, Lugar). (Carlos)
+vive_en(ernesto, valle verde).
+vive_en(teresa, valle verde).
+vive_en(ana, valle verde).
+vive_en(carlos, capital).
+vive_en(sofia, capital).
+vive_en(mateo, capital).
+vive_en(valeria, capital)
+vive_en(andres, valle verda).
+vive_en(lucia, capital).
+vive_en(ricardo, capital).
+vive_en(laura, capital).
+vive_en(daniel, capital).
+vive_en(miguel, valle verde).
+vive_en(rosa, valle verde).
+vive_en(fernanda, valle verde).
+vive_en(carmen, valle verde).
+vive_en(isabel, valle verde).
+vive_en(felipe, valle verde).
+vive_en(joaquin, valle verde)
+
 
 %2. trabaja_en(Persona, Profesion). (Carlos)
+trabaja_en(ernesto, jubilado).
+trabaja_en(teresa, jubilada).
+trabaja_en(carlos, constructora).
+trabaja_en(sofia, arquitecta).
+trabaja_en(ana, profesora).
+trabaja_en(ricardo, abogado).
+trabaja_en(laura, bibliotecaria).
+trabaja_en(miguel, cultivos).
+trabaja_en(rosa, tienda).
+trabaja_en(felipe, tienda de ropa).
+
 
 %3. padre(Padre, Hijo). / madre(Madre, Hijo). (Carlos)
+padre(ernesto, carlos).
+padre(ernesto, ana).
+padre(ernesto, lucia).
+padre(carlos, mateo).
+padre(carlos, valeria).
+padre(miguel, fernanda).
+padre(felipe, joaquin)
+
+madre(teresa, carlos).
+madre(teresa, ana).
+madre(teresa, lucia).
+madre(sofia, mateo).
+madre(sofia, valeria).
+madre(ana, andres).
+madre(rosa, fernanda)
+
 
 %4. casado_con(Persona1, Persona2). (Henry)
 casado_con(ernesto,teresa).
