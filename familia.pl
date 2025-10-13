@@ -1,5 +1,5 @@
 %-----------Parte 1:  Verbos para construir la base de conocimiento-----------
-%1. vive_en(Persona, Lugar). (Carlos)
+% 1. vive_en(Persona, Lugar). (Carlos)
 vive_en(ernesto, valle verde).
 vive_en(teresa, valle verde).
 vive_en(ana, valle verde).
@@ -21,7 +21,7 @@ vive_en(felipe, valle verde).
 vive_en(joaquin, valle verde)
 
 
-%2. trabaja_en(Persona, Profesion). (Carlos)
+% 2. trabaja_en(Persona, Profesion). (Carlos)
 trabaja_en(ernesto, jubilado).
 trabaja_en(teresa, jubilada).
 trabaja_en(carlos, constructora).
@@ -34,7 +34,7 @@ trabaja_en(rosa, tienda).
 trabaja_en(felipe, tienda de ropa).
 
 
-%3. padre(Padre, Hijo). / madre(Madre, Hijo). (Carlos)
+% 3. padre(Padre, Hijo). / madre(Madre, Hijo). (Carlos)
 padre(ernesto, carlos).
 padre(ernesto, ana).
 padre(ernesto, lucia).
@@ -52,13 +52,13 @@ madre(ana, andres).
 madre(rosa, fernanda)
 
 
-%4. casado_con(Persona1, Persona2). (Henry)
+% 4. casado_con(Persona1, Persona2). (Henry)
 casado_con(ernesto,teresa).
 casado_con(carlos,sofia).
 casado_con(ricardo,laura).
 casado_con(miguel,rosa).
-%5. hijo(Hijo, Padre). (Henry)
-%ernesto y teresa
+% 5. hijo(Hijo, Padre). (Henry)
+% ernesto y teresa
 hijo(carlos,ernesto).
 hijo(ana,ernesto).
 hijo(lucia,ernesto).
@@ -66,30 +66,30 @@ hijo(carlos,teresa).
 hijo(ana,teresa).
 hijo(lucia,teresa).
 
-%carlos y sofia
+% carlos y sofia
 hijo(mateo,carlos).
 hijo(valeria,carlos).
 hijo(mateo,sofia).
 hijo(valeria,sofia).
 
-%ricardo y laura
+% ricardo y laura
 hijo(daniel,ricardo).
 hijo(daniel,laura).
 
-%miguel y rosa
+% miguel y rosa
 hijo(fernanda,miguel).
 hijo(fernanda,rosa).
-%6. amigo(Persona1, Persona2). (José)
+% 6. amigo(Persona1, Persona2). (José)
 amigo(carlos, ricardo).
 amigo(daniel, mateo).
 
-%7. primo(Persona1, Persona2). (José)
+% 7. primo(Persona1, Persona2). (José)
 primo(lucia, daniel).
 
 %-----------Parte 2: Define reglas en Prolog---------------
-%determine si alguien es abuelo/abuela
-abuelo(x,y):- padre(X,Z),padre(Z,Y).
-abuela(x,y):- madre(X,Z),madre(Z,Y).
+% determine si alguien es abuelo/abuela
+abuelo(X,Y):- padre(X,Z),padre(Z,Y).
+abuela(X,Y):- madre(X,Z),madre(Z,Y).
 
 %determine si dos personas son hermanos/as
 hermano(X,Y):- padre(P,X),padre(P,Y),X\=Y.
@@ -125,7 +125,7 @@ amigo_de_primo(X,Y):- amigo(X,Z),primos(Z,Y).
 %?- primo(ricardo, fernanda).
 
 %7 ¿Existe alguien que no sea padre ni madre? (uso de not/1).
-%?- not(padre(X,)), not(madre(X,)).
+%?- not(padre(X,_)), not(madre(X,_)).
 
 %8 ¿En qué lugar vive cada miembro de la familia?
 %?- vive_en(Persona, Lugar).
