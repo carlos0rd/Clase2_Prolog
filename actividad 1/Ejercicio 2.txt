@@ -1,0 +1,31 @@
+Ejercicio 2
+Preguntas:
+¿Qué come el pingüino?
+El pingüino come: pescado
+¿Qué animales son comida del águila?
+Animales que son comida del águila:
+- loro
+- pingüino
+¿Es el loro un ave?
+   Sí, el loro es un ave
+
+Queries:
+
+% Pregunta 1: ¿Qué come el pingüino?
+    writeln('1. ¿Qué come el pingüino?'),
+    come(pinguino, Que1),
+    write('   El pingüino come: '), writeln(Que1),
+    nl,
+    
+    % Pregunta 2: ¿Qué animales son comida del águila?
+    writeln('2. ¿Qué animales son comida del águila?'),
+    writeln('   Animales que son comida del águila:'),
+    forall(comida(Animal), (write('   - '), writeln(Animal))),
+    nl,
+    
+    % Pregunta 3: ¿Es el loro un ave?
+    writeln('3. ¿Es el loro un ave?'),
+    (ave(loro) ->
+        writeln('   Sí, el loro es un ave')
+    ;   writeln('   No, el loro no es un ave')
+    ).
