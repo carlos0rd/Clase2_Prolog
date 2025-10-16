@@ -1,4 +1,4 @@
-# 💻 Clase2_Prolog
+# 💻 Ejercicios realizados en clase de prolog
 
 Repositorio de prácticas y ejercicios en **Prolog**, desarrollados para la materia de *Programación Declarativa*.
 
